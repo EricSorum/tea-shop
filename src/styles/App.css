@@ -1,3 +1,7 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .menuAndCart {
   display: flex;
   justify-content:space-around;

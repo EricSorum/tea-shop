@@ -6,7 +6,8 @@ const creditsObj = {
       berry: 'Image by Bacanski from <a href="https://pixnio.com/author/bicanski">Pixnio</a>',
       honeydew: 'Image by <a href="https://commons.wikimedia.org/wiki/User:Infrogmation">Infrogmation</a> from <a href="https://commons.wikimedia.org/wiki/File:BubbleTeaHoneydewMapleStreet20July2008.jpg">Wikimedia</a>',
       interior: 'Image by <a href="https://commons.wikimedia.org/wiki/User:Takeaway">Takeaway</a> from <a href="https://commons.wikimedia.org/wiki/File:2019_02_Awesome_Coffee_Shop_in_Korat.jpg">Wikimedia</a>',
-      southern: 'Photo by <a href="https://pxhere.com/en/photographer/147056">Fox</a> from <a href="https://pxhere.com/en/photo/1512057">PxHere</a>',
+      southern: 'Image by <a href="https://pxhere.com/en/photographer/147056">Fox</a> from <a href="https://pxhere.com/en/photo/1512057">PxHere</a>',
+      arnie: 'Image by Ian L from <a href="https://www.publicdomainpictures.net/en/view-image.php?image=160745&picture=iced-lemon-tea">Public Domain Pictures</a>',
    }
 
 export default creditsObj

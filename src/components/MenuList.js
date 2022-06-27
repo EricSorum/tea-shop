@@ -1,5 +1,10 @@
 import React, { Component } from 'react'
 import MenuItem from './MenuItem'
+import arnie from './images/arnie.jpg'
+import southern from './images/southern.jpg'
+import peach from './images/peach.jpg' 
+import honeydew from './images/honeydew.jpg'
+import moo from './images/moo.jpg'
 
 
 class MenuList extends Component {
@@ -12,44 +17,35 @@ class MenuList extends Component {
               name: 'Arnie Palmer',
               description: 'Half black tea, half fresh-made lemonade!',
               price: '$4.99',
-              img: ''
+              img: arnie,
             },
             {
-               id: 2, 
-               name: 'Classic Thai',
-               description: 'Strong green tea mixed with sweetened condensed milk.',
-               price: '$6.99',
-               img: ''
-            },
-            {
+               id: 3,
                name: 'Southern Sweet',
                description: 'Made the right way... by adding the sugar first!',
                price: '$4.99',
-               img: ''
+               img: southern,
             },
             {
-               name: 'Macha Bubble',
-               description: 'Lightly sweetened macha tea with tapioca bubbles.',
-               price: '$6.99',
-               img: ''
-            },
-            {
+               id: 4,
                name: 'Peach Tree',
                description: 'Green tea with peach syrup and tapioca bubbles.',
                price: '$6.99',
-               img: '',
+               img: peach,
             },
             {
+               id: 5,
                name: 'Honeydew Pistachio',
                description: 'A local favorite - blended with green tea, ripe melon and pistachios with tapioca bubbles.',
                price: '$6.99',
-               img: '',
+               img: honeydew,
             },
             {
+               id: 6,
                name: 'Big Moo',
                description: 'Black tea with a generous amount of sugar, cream, and bubbles.',
                price: '$6.99',
-               img: '',
+               img: moo,
             }
          ]
       } 
