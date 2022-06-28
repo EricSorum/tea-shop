@@ -1,14 +1,15 @@
 import React from 'react'
 import styles from '../styles/Order.module.css'
 
-const Order = (props) => {
+const CustomList = (props) => {
    const { teas } = props
    return (
       <ul className={styles.order}>
          {teas.map((tea) => {
             return (
                <div key={tea.id}>
-                  <h3>{tea.num} {tea.type} Tea</h3>
+                  <h3>{tea.num} {tea.name} </h3>
+                  <div>{tea.type} Tea</div>
                   <div>Size: {tea.size}</div>
                   <div>Flavor: {tea.syrup}</div>
                   {tea.bubbles && <div>with Bubbles</div>}
@@ -21,4 +22,4 @@ const Order = (props) => {
    )
 }
 
-export default Order
+export default CustomList

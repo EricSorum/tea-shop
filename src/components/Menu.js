@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Tea from './Tea'
+import CustomForm from './CustomForm'
 import StyleSheet from '../styles/Menu.module.css'
 import MenuList from './MenuList'
 
@@ -17,7 +17,7 @@ class Menu extends Component {
          <div className={StyleSheet.menuDiv}>
             <div>Menu</div>
                <button onClick={this.customHandler}>Make your own cup of tea!</button>
-               {this.state.custom ? <Tea /> : null}
+               {this.state.custom ? <CustomForm /> : null}
             <br />
             <div className='listOfItems'>
             <MenuList />

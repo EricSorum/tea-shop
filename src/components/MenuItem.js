@@ -14,6 +14,12 @@ const MenuList = (props) => {
                      </div>
                      <div className={styles.B}>
                         <div className={styles.Description}>{description}</div>
+                        <label htmlFor='size'>Select size:</label>
+                        <select name='size' required>
+                           <option>Small</option>
+                           <option>Medium</option>
+                           <option>Large</option>
+                        </select>
                      </div>
                      <div className={styles.C}>
                         <img src={img} alt={name} className={styles.Image} />
