@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import uniqid from 'uniqid'
 import Order from './Order'
 import style from '../styles/Tea.module.css'
 
@@ -15,7 +14,6 @@ class CustomTea extends Component {
             bubbles: false,
             milk: false,
             temp: 'Iced',
-            id: uniqid()
          },     
          teas: []
       }
@@ -36,7 +34,6 @@ class CustomTea extends Component {
             flavor: '',
             bubbles: false,
             milk: false,
-            id: uniqid()
          },
       })
       e.preventDefault()

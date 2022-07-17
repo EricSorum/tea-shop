@@ -1,8 +1,9 @@
 import React from 'react'
 import styles from '../styles/MenuItem.module.css'
 
-const MenuList = (props) => {
-   const { items } = props
+const MenuMap = (props) => {
+   const { items, addToCart } = props
+
    return (
       <ul className={styles.Ul}>
          {items.map((item) => {
@@ -19,7 +20,7 @@ const MenuList = (props) => {
                         <img src={img} alt={name} className={styles.Image} />
                      </div>
                      <div className={styles.D}>
-                        <div><button>Add to Cart</button></div>
+                        <div><button id="cartButton" onClick={() => addToCart(item)}>Add to Cart</button></div>
                      </div>
                   </div>
          })}
@@ -27,4 +28,4 @@ const MenuList = (props) => {
    )
 }
 
-export default MenuList
+export default MenuMap

@@ -20,7 +20,7 @@ class Menu extends Component {
                {this.state.custom ? <CustomTea /> : null}
             <br />
             <div className='listOfItems'>
-            <MenuList />
+            <MenuList addToCart={this.props.addToCart}/>
             </div>   
          </div>
       )

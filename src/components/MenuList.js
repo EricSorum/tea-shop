@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import MenuItem from './MenuItem'
+import MenuMap from './MenuMap'
 import arnie from './images/arnie.jpg'
 import southern from './images/southern.jpg'
 import peach from './images/peach.jpg' 
@@ -22,7 +22,7 @@ class MenuList extends Component {
             {
                id: 3,
                name: 'Southern Sweet',
-               description: 'Made the right way... by adding the sugar first!',
+               description: 'Made the right way... by adding the sugar before the tea!',
                price: '$4.99',
                img: southern,
             },
@@ -56,7 +56,7 @@ class MenuList extends Component {
       return (
          <div>
             <div></div>
-            <MenuItem items={items}/>
+            <MenuMap items={items} addToCart={this.props.addToCart}/>
 
          </div>
       )
