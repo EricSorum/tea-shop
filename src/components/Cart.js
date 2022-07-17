@@ -1,13 +1,9 @@
 import React, { Component } from 'react'
+import CartContext from '../CartContext'
+import {useContext} from 'react'
 
 class Cart extends Component {
-  constructor(props) {
-    super(props)
-  
-    this.state = {
-      cartList: [],
-    }
-  }
+  const {item} = useContext(CartContext)
   render() {
     return (
       <div>Cart</div>
