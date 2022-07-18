@@ -5,3 +5,8 @@
   min-width: 400px;
   min-height: 600px;
  }
+
+ h2 {
+  font-size: 3rem;
+  color: white;
+ }

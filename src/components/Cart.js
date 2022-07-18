@@ -16,7 +16,7 @@ export class Cart extends Component {
     return (
       <div className={style.cartDiv}>
         <div><button className={style.cartButton} onClick={this.toggleCart}>Cart  {this.props.cartItems.length}</button></div>
-        <div>
+        <div className={style.cartBox}>
           {this.state.showCart ? <CartMap items={this.props.cartItems} removeFromCart={this.props.removeFromCart}/> : null}
         </div>
       </div>

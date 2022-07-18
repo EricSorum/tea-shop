@@ -6,5 +6,6 @@
   display: flex;
   justify-content:center;
   gap: 20px;
-  
+  background: url('../components/images/beach.jpg') no-repeat fixed;
+  background-size: cover;
 }

@@ -11,8 +11,7 @@
    width: 350px;
    height: 100px;
    margin-top: 60px;
-   background-color: white;
-   box-shadow: 1px 1px 5px;
+   background-color: azure;
 
    padding: 20px;
    gap: 20px;
@@ -24,6 +23,7 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   width: 210px;
 }
 
 .D {
@@ -35,8 +35,8 @@
 }
 
 .Name {
-   font-size: 2rem;
-   white-space: nowrap;
+   font-size: 1.5rem;
+   text-align: center;
 }
 
 .Price {
@@ -56,8 +56,8 @@
 
 .removeButton {
    background-color: white;
-   width: 120px;
-   height: 70px;
+   width: 100px;
+   height: 50px;
    border: none;
    box-shadow: 1px 1px 5px;
    font-size: 1rem;

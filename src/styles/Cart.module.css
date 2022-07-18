@@ -23,3 +23,9 @@
 .cartButton:hover {
   background-color: rgb(122, 255, 237);
 }
+
+.cartBox {
+  position: relative;
+  top: 20px;
+  background-color: azure;
+}
