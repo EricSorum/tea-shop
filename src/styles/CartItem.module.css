@@ -6,36 +6,32 @@
 .Grid {
    display: grid;
    grid-template: repeat(5, 100px), repeat(4, 100px);
-   grid-template-areas: "A A A A"
-                        "C C C C"
-                        "C C C C"
-                        "C C C C"
-                        "D D D D";
-   width: 300px;
-   height: 400px;
+   grid-template-areas: "A A A D D"
+                        "A A A D D";
+   width: 350px;
+   height: 100px;
    margin-top: 60px;
-   background-color: aqua;
+   background-color: white;
    box-shadow: 1px 1px 5px;
-   border-radius: 10px;
+
    padding: 20px;
    gap: 20px;
 }
 
 .A {
    grid-area: A;
-}
-
-.B {
-   grid-area: B;
-}
-
-.C {
-   grid-area: C;
-   width: 200px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 
 .D {
    grid-area: D;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 
 .Name {
@@ -56,4 +52,22 @@
 
 .Description {
    font-size: 1.25rem;
+}
+
+.removeButton {
+   background-color: white;
+   width: 120px;
+   height: 70px;
+   border: none;
+   box-shadow: 1px 1px 5px;
+   font-size: 1rem;
+}
+
+.removeButton:active {
+   box-shadow:inset 1px 1px;
+   scale: 98%;
+}
+
+.removeButton:hover {
+   background-color: rgb(122, 255, 237);
 }

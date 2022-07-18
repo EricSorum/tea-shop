@@ -1,3 +1,4 @@
+/*
 import React, { Component } from 'react'
 import Order from './Order'
 import style from '../styles/Tea.module.css'
@@ -94,3 +95,4 @@ class CustomTea extends Component {
 }
 
 export default CustomTea
+*/

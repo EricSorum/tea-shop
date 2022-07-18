@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import CartMap from './CartMap'
+import style from '../styles/Cart.module.css'
 
 export class Cart extends Component {
   constructor(props) {
@@ -13,8 +14,8 @@ export class Cart extends Component {
 
   render() {
     return (
-      <div>
-        <div><button onClick={this.toggleCart}>Cart {this.props.cartItems.length}</button></div>
+      <div className={style.cartDiv}>
+        <div><button className={style.cartButton} onClick={this.toggleCart}>Cart  {this.props.cartItems.length}</button></div>
         <div>
           {this.state.showCart ? <CartMap items={this.props.cartItems} removeFromCart={this.props.removeFromCart}/> : null}
         </div>

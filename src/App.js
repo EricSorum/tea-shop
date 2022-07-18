@@ -1,4 +1,5 @@
 import './styles/App.css';
+import Header from './components/Header';
 import Menu from './components/Menu';
 import Cart from './components/Cart';
 import { useState } from 'react'
@@ -10,11 +11,11 @@ function App() {
 
   }
   const removeFromCart = (item) => {
-    console.log("remove from cart")
     setCartItems(cartItems.filter((x) => x.id !== item.id))
   }
   return (
     <div className="App">
+        <Header />
         <div className='menuAndCart'>
           <Menu addToCart={addToCart} />
           <Cart cartItems={cartItems} removeFromCart={removeFromCart}/>
@@ -25,4 +26,3 @@ function App() {
 
 export default App;
 
-// create a simple function in App and pass it down as a prop to Menu and Cart

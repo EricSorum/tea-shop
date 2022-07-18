@@ -1,9 +1,12 @@
 .Ul {
    list-style: none;
    padding-left: 0;
+   display: grid;
+   grid-template-columns: auto;
+   grid-template-rows: auto;
 }
 
-.Grid {
+.itemGrid {
    display: grid;
    grid-template: repeat(5, 100px), repeat(4, 100px);
    grid-template-areas: "A A A A"
@@ -14,9 +17,8 @@
    width: 400px;
    height: 500px;
    margin-top: 60px;
-   background-color: aqua;
    box-shadow: 1px 1px 5px;
-   border-radius: 10px;
+   border-radius: 0px;
    padding: 20px;
    gap: 20px;
 }
@@ -56,4 +58,22 @@
 
 .Description {
    font-size: 1.25rem;
+}
+
+.addButton {
+   background-color: white;
+   width: 150px;
+   height: 110px;
+   border: none;
+   box-shadow: 1px 1px 5px;
+   font-size: 1.25rem;
+}
+
+.addButton:active {
+   box-shadow:inset 1px 1px;
+   scale: 98%;
+}
+
+.addButton:hover {
+   background-color: rgb(122, 255, 237);
 }

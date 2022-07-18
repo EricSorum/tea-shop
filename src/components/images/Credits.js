@@ -8,6 +8,7 @@ const creditsObj = {
       interior: 'Image by <a href="https://commons.wikimedia.org/wiki/User:Takeaway">Takeaway</a> from <a href="https://commons.wikimedia.org/wiki/File:2019_02_Awesome_Coffee_Shop_in_Korat.jpg">Wikimedia</a>',
       southern: 'Image by <a href="https://pxhere.com/en/photographer/147056">Fox</a> from <a href="https://pxhere.com/en/photo/1512057">PxHere</a>',
       arnie: 'Image by Ian L from <a href="https://www.publicdomainpictures.net/en/view-image.php?image=160745&picture=iced-lemon-tea">Public Domain Pictures</a>',
+      beach: 'Image by <a href="https://pixabay.com/users/julius_silver-4371822/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3998261">Julius Silver</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3998261">Pixabay</a>',
    }
 
 export default creditsObj

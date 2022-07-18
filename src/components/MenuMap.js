@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../styles/MenuItem.module.css'
+import styles from '../styles/MenuMap.module.css'
 
 const MenuMap = (props) => {
    const { items, addToCart } = props
@@ -8,7 +8,7 @@ const MenuMap = (props) => {
       <ul className={styles.Ul}>
          {items.map((item) => {
             const { name, price, description, img, key } = item;
-            return <div className={styles.Grid}>
+            return <div className={styles.itemGrid}>
                      <div className={styles.A}>
                         <div className={styles.Name}>{key}{name}</div>
                         <div className={styles.Price}>{price}</div>
@@ -20,7 +20,7 @@ const MenuMap = (props) => {
                         <img src={img} alt={name} className={styles.Image} />
                      </div>
                      <div className={styles.D}>
-                        <div><button id="cartButton" onClick={() => addToCart(item)}>Add to Cart</button></div>
+                        <button className={styles.addButton} onClick={() => addToCart(item)}>Add to Cart</button>
                      </div>
                   </div>
          })}

@@ -55,9 +55,7 @@ class MenuList extends Component {
       const { items } = this.state
       return (
          <div>
-            <div></div>
             <MenuMap items={items} addToCart={this.props.addToCart}/>
-
          </div>
       )
    }
