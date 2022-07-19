@@ -1,11 +1,15 @@
-* {
+.App {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: url('../components/images/beach.jpg') no-repeat fixed;
+  background-size: cover;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: -10px;
+  margin-top: -55px;
 }
 
 .menuAndCart {
   display: flex;
   justify-content:center;
-  gap: 20px;
-  background: url('../components/images/beach.jpg') no-repeat fixed;
-  background-size: cover;
+
 }

@@ -1,6 +1,17 @@
+
+
+
+
 .header {
    display: flex;
    justify-content: center;
    align-items: center;
-   font-size: 3.5rem;
+   font-size: 5rem;
+   font-family: headerFont;
+   font-style: italic;
+   color: white;
+   text-shadow: black 2px 2px 2px;
+   background-image: url('../components/images/wood.jpg');
+   background-size: cover;
+   height: 160px;
 }

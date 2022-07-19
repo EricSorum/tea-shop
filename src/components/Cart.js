@@ -16,9 +16,12 @@ export class Cart extends Component {
     return (
       <div className={style.cartDiv}>
         <div><button className={style.cartButton} onClick={this.toggleCart}>Cart  {this.props.cartItems.length}</button></div>
-        <div className={style.cartBox}>
-          {this.state.showCart ? <CartMap items={this.props.cartItems} removeFromCart={this.props.removeFromCart}/> : null}
-        </div>
+          {this.state.showCart ? 
+              <div className={style.cartBox}>
+                <CartMap items={this.props.cartItems} removeFromCart={this.props.removeFromCart}/> 
+                <button className={style.checkoutButton}>Checkout</button>
+              </div>
+          : null}
       </div>
     )
   }

@@ -9,6 +9,7 @@ const creditsObj = {
       southern: 'Image by <a href="https://pxhere.com/en/photographer/147056">Fox</a> from <a href="https://pxhere.com/en/photo/1512057">PxHere</a>',
       arnie: 'Image by Ian L from <a href="https://www.publicdomainpictures.net/en/view-image.php?image=160745&picture=iced-lemon-tea">Public Domain Pictures</a>',
       beach: 'Image by <a href="https://pixabay.com/users/julius_silver-4371822/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3998261">Julius Silver</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3998261">Pixabay</a>',
+      wood: 'Image by <a href="https://pixabay.com/users/pexels-2286921/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1846972">Pexels</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1846972">Pixabay</a>',
    }
 
 export default creditsObj
