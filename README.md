@@ -1,1 +1,1 @@
-This React project demonstrates the use of props and state to create customized orders of iced tea.  
+This React project demonstrates the use of props and state to add items to a shopping cart.  
