@@ -3,6 +3,7 @@
 
 
 .header {
+
    display: flex;
    justify-content: center;
    align-items: center;
@@ -11,7 +12,7 @@
    font-style: italic;
    color: white;
    text-shadow: black 2px 2px 2px;
-   background-image: url('../components/images/wood.jpg');
-   background-size: cover;
+   /*background-image: url('../components/images/wood.jpg');*/
+   /*background-size: cover;*/
    height: 160px;
 }

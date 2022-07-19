@@ -14,7 +14,7 @@ function App() {
     setCartItems(cartItems.filter((x) => x.id !== item.id))
   }
   return (
-    <div className="App">
+    <div className='App'>
         <Header />
         <div className='menuAndCart'>
           <Menu addToCart={addToCart} />

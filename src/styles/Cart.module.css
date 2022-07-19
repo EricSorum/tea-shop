@@ -30,18 +30,21 @@
   width: 400px;
   min-height: 650px;
   box-shadow: black 2px 2px 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .checkoutButton {
-    background-color: white;
-    width: 160px;
-    height: 50px;
-    border: none;
-    box-shadow: 1px 1px 5px;
-    font-size: 1.25rem;
-    position: relative;
-    left: 20px;
-    bottom: 20px;
+  background-color: white;
+  width: 160px;
+  height: 50px;
+  border: none;
+  box-shadow: 1px 1px 5px;
+  font-size: 1.25rem;
+  position: relative;
+  left: 20px;
+  bottom: 20px;
   }
   
   .checkoutButton:active {
@@ -51,4 +54,8 @@
   
   .checkoutButton:hover {
     background-color: rgb(122, 255, 237);
+  }
+
+  .noItems {
+    font-size: 1.25rem;
   }

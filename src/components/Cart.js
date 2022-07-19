@@ -19,7 +19,9 @@ export class Cart extends Component {
           {this.state.showCart ? 
               <div className={style.cartBox}>
                 <CartMap items={this.props.cartItems} removeFromCart={this.props.removeFromCart}/> 
+                {this.props.cartItems.length > 0 ? 
                 <button className={style.checkoutButton}>Checkout</button>
+                : <span className={style.noItems}>No items in cart.</span>}
               </div>
           : null}
       </div>
