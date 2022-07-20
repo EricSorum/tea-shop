@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/tea-shop/static/css/main.ea8757b2.css",
+    "main.js": "/tea-shop/static/js/main.468a2b82.js",
+    "static/media/beach.jpg": "/tea-shop/static/media/beach.a4a8206bc344d46fde0f.jpg",
+    "static/media/arnie.jpg": "/tea-shop/static/media/arnie.a2d000296aa454377cac.jpg",
+    "static/media/peach.jpg": "/tea-shop/static/media/peach.503b2e3752b651ac963a.jpg",
+    "static/media/moo.jpg": "/tea-shop/static/media/moo.ee7797966f94264c1f21.jpg",
+    "static/media/honeydew.jpg": "/tea-shop/static/media/honeydew.ec0f0b8676876cbfeea0.jpg",
+    "static/media/southern.jpg": "/tea-shop/static/media/southern.10fec8b025644b5f66bc.jpg",
+    "index.html": "/tea-shop/index.html",
+    "main.ea8757b2.css.map": "/tea-shop/static/css/main.ea8757b2.css.map",
+    "main.468a2b82.js.map": "/tea-shop/static/js/main.468a2b82.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea8757b2.css",
+    "static/js/main.468a2b82.js"
+  ]
+}
