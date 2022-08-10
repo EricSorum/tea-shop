@@ -4,6 +4,22 @@ import Menu from './components/Menu';
 import Cart from './components/Cart';
 import { useState } from 'react'
 
+/*
+Starting with App.js, the page has the following structure:
+
+App
+  -Header
+  -Menu
+    -MenuList
+      -MenuMap
+  -Cart
+    -CartMap
+
+Menu and Cart 
+MenuMap contains the .map method that renders each menu item in the array.
+CartMap similarly renders the items in the cart.
+*/
+
 function App() {
   const [cartItems, setCartItems] = useState([])
   const addToCart = (item) => {

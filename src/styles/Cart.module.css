@@ -2,7 +2,8 @@
    display: flex;
    flex-direction: column;
    align-items: flex-end;
- }
+
+}
 
  .cartButton {
   background-color: white;
@@ -46,16 +47,16 @@
   left: 20px;
   bottom: 20px;
   }
-  
-  .checkoutButton:active {
-    box-shadow:inset 1px 1px;
-    scale: 98%;
-  }
-  
-  .checkoutButton:hover {
-    background-color: rgb(122, 255, 237);
-  }
 
-  .noItems {
-    font-size: 1.25rem;
-  }
+.checkoutButton:active {
+  box-shadow:inset 1px 1px;
+  scale: 98%;
+}
+
+.checkoutButton:hover {
+  background-color: rgb(122, 255, 237);
+}
+
+.noItems {
+  font-size: 1.25rem;
+}

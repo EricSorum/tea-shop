@@ -1,7 +1,5 @@
 
-
 .App {
-
   background: url('../components/images/beach.jpg') no-repeat fixed;
   background-size: cover;
   margin-left: -10px;
@@ -13,5 +11,4 @@
 .menuAndCart {
   display: flex;
   justify-content:center;
-
 }
