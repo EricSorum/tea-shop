@@ -1,8 +1,8 @@
 .cartDiv {
    display: flex;
    flex-direction: column;
+   justify-content: flex-start;
    align-items: flex-end;
-
 }
 
  .cartButton {
@@ -24,9 +24,9 @@
 }
 
 .cartBox {
-  position: relative;
+  position: absolute;
   z-index: 1;
-  top: 20px;
+  top: 270px;
   background-color: azure;
   width: 400px;
   min-height: 650px;

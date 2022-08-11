@@ -5,7 +5,7 @@ import Cart from './components/Cart';
 import { useState } from 'react'
 
 /*
-Starting with App.js, the page has the following structure:
+The page has the following structure:
 
 App
   -Header
@@ -15,9 +15,11 @@ App
   -Cart
     -CartMap
 
-Menu and Cart 
+Menu and Cart are in their own div called menuAndCart
 MenuMap contains the .map method that renders each menu item in the array.
 CartMap similarly renders the items in the cart.
+The Cart component contains the Cart button.  When the button is clicked, the Cart box
+appears and displays all items in the cart.
 */
 
 function App() {
