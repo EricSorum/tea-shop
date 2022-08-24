@@ -22,7 +22,20 @@ class CustomTea extends Component {
          tea: {...this.state.tea, [e.target.name]: e.target.value}
       })
    }
+   bubblesChange = e => {
+      this.setState({
+         tea: {...this.state.tea, bubbles: !this.state.tea.bubbles}
+      })
+   }
+   milkChange = e => {
+      this.setState({
+         tea: {...this.state.tea, milk: !this.state.tea.bubbles}
+      })
+   }
    submitForm = e => {
+      console.log(e.bubbles)
+      console.log(e.milk)
+      console.log(this.state.tea)
       this.setState({
          teas: this.state.teas.concat(this.state.tea),
          tea: {
@@ -78,11 +91,11 @@ class CustomTea extends Component {
                </div>
                <div>
                   <label htmlFor="bubbles">Add Bubbles</label>
-                  <input type="checkbox" name="bubbles" id="bubbles" value={this.state.tea.bubbles} onChange={this.handleChange}></input>
+                  <input type="checkbox" name="bubbles" id="bubbles" onChange={this.bubblesChange}></input>
                </div>
                <div>
                   <label htmlFor="milk">Add Sweetened Condensed Milk</label>
-                  <input type="checkbox" name="milk" id="milk" value={this.state.tea.bubbles} onChange={this.handleChange}></input>
+                  <input type="checkbox" name="milk" id="milk" onChange={this.milkChange}></input>
                </div>
                <div>
                   <button type="submit" className={style.customAddToCart}>Add to Cart</button>
