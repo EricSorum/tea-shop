@@ -23,12 +23,18 @@ const CartMap = (props) => {
          {items.map((item) => {
             
             if (item.custom) {
-               const {size, type, flavor} = item;
+               const {size, type, flavor, bubbles, milk} = item;
                return <div key={Math.floor(Math.random() * 10000)} className={style.Grid}>
                         <div className={style.A}>
-                           <div className={style.Name}>Custom Tea</div>
-                           <div className={style.Flavors}>{type}, {flavor}</div>
-                           <div className={style.Size}>{size}</div>
+                           <div className={style.Name}>{type} Tea</div>
+                              
+                              <div className={style.Flavors}>
+                                 {flavor || bubbles || milk ? <span className={style.Flavors}>Add: </span>: null}
+                                 {flavor ? <span className={style.Flavors}>{flavor}</span> : null}
+                                 {bubbles ? <span className={style.Flavors}>, Bubbles</span> : null}
+                                 {milk ? <span className={style.Flavors}>, Milk</span> : null}
+                              </div>
+                           <div className={style.Size}>Size: {size}</div>
                            <div className={style.Price}>{renderPrice(size)}</div>
                         </div>
                         <div className={style.D}>
@@ -40,8 +46,8 @@ const CartMap = (props) => {
                return <div key={Math.floor(Math.random() * 10000)} className={style.Grid}>
                         <div className={style.A}>
                            <div className={style.Name}>{name}</div>
+                           <div className={style.Size}>Size: {size}</div>
                            <div className={style.Price}>{renderPrice(size)}</div>
-                           <div className={style.Size}>{size}</div>
                         </div>
                         <div className={style.D}>
                            <div><button className={style.removeButton} onClick={() => removeFromCart(item)}>Remove</button></div>

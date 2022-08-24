@@ -72,6 +72,7 @@ class CustomTea extends Component {
                      <option value="Mango">Mango</option>
                      <option value="Honeydew">Honeydew</option>
                      <option value="Raspberry">Raspberry</option>
+                     <option value="Blueberry">Blueberry</option>
                      <option value="Peach">Peach</option>
                   </select>
                </div>

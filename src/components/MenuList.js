@@ -5,7 +5,7 @@ import southern from './images/southern.jpg'
 import peach from './images/peach.jpg' 
 import honeydew from './images/honeydew.jpg'
 import moo from './images/moo.jpg'
-
+import blue from './images/blue.jpg'
 
 class MenuList extends Component {
    constructor(props) {
@@ -41,6 +41,12 @@ class MenuList extends Component {
                name: 'Big Moo',
                description: 'Black tea with a generous amount of sugar, cream, and bubbles.',
                img: moo,
+               size: 'Small',
+            },
+            {
+               name: 'Blueberry Mint',
+               description: 'Sweetened condensed milk with blueberry puree make this herbal tea especially soothing.',
+               img: blue,
                size: 'Small',
             }
          ]
