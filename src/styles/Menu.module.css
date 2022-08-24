@@ -10,3 +10,22 @@
   font-size: 3rem;
   color: white;
  }
+
+ .customButton {
+  background-color: white;
+  border-radius: 0%;
+  border: none;
+  padding: 10px;
+  font-size: 1.5rem;
+  box-shadow: black 2px 2px 2px;
+  margin-bottom: 10px;
+ }
+
+ .customButton:active {
+  box-shadow:inset 1px 1px;
+  scale: 98%;
+}
+
+.customButton:hover {
+  background-color: rgb(122, 255, 237);
+}

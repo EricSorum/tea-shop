@@ -1,28 +1,21 @@
-
-/*
-
-Build-your-own Ice Tea (Unfished feature)
-
 import React, { Component } from 'react'
-import Order from './Order'
-import style from '../styles/Tea.module.css'
+import style from '../styles/CustomTea.module.css'
 
 class CustomTea extends Component {
    constructor(props) {
       super(props)
       this.state = {
          tea: {
-            num: 1,
-            type: 'Ginger',
-            size: 'Large',
-            syrup: 'lemon',
+            custom: true,
+            type: '',
+            size: '',
+            flavor: '',
             bubbles: false,
             milk: false,
-            temp: 'Iced',
          },     
-         teas: []
+         teas: [],
       }
-   }   
+   }
    handleChange = e => {
       this.setState({
          ...this.state,
@@ -33,7 +26,7 @@ class CustomTea extends Component {
       this.setState({
          teas: this.state.teas.concat(this.state.tea),
          tea: {
-            num: this.state.tea.num + 1,
+            custom: true,
             type: '',
             size: '',
             flavor: '',
@@ -41,16 +34,16 @@ class CustomTea extends Component {
             milk: false,
          },
       })
+      this.props.addToCart(this.state.tea);
       e.preventDefault()
-   } 
+   }
    render() {
       return (
          <div className={style.TeaDiv}>
-            <form onSubmit={this.submitForm}>
-               <h1>Tea order form</h1>
+            <form onSubmit={this.submitForm} className={style.customForm}>
                <div>
                   <label htmlFor='type'>Type of Tea: </label>
-                  <select name='type' value={this.state.tea.type} required onChange={this.handleChange}>
+                  <select name='type' id="type" value={this.state.tea.type} required onChange={this.handleChange}>
                      <option></option>
                      <option value="Ginger">Ginger</option>
                      <option value="Mint">Mint</option>
@@ -62,7 +55,7 @@ class CustomTea extends Component {
                </div>
                <div>
                   <label htmlFor='size'>Size: </label>
-                  <select type="select" name="size" value={this.state.tea.size} required onChange={this.handleChange}>
+                  <select name="size" id="size" value={this.state.tea.size} required onChange={this.handleChange}>
                      <option></option>
                      <option value="Small">Small</option>
                      <option value="Medium">Medium</option>
@@ -70,33 +63,34 @@ class CustomTea extends Component {
                   </select>
                </div>
                <div>
-                  <label htmlFor='flavor'>Flavor: </label>
-                  <select type="select" name="syrup" value={this.state.tea.flavor} onChange={this.handleChange}>
+                  <label htmlFor='flavor'>Add Flavor: </label>
+                  <select name="flavor" id="flavor" value={this.state.tea.flavor} onChange={this.handleChange}>
                      <option value="None"></option>
                      <option value="Lemon">Lemon</option>
                      <option value="Lavender">Lavender</option>
                      <option value="Lime">Lime</option>
                      <option value="Mango">Mango</option>
+                     <option value="Honeydew">Honeydew</option>
+                     <option value="Raspberry">Raspberry</option>
+                     <option value="Peach">Peach</option>
                   </select>
                </div>
                <div>
                   <label htmlFor="bubbles">Add Bubbles</label>
-                  <input type="checkbox" name="bubbles" value={this.state.tea.bubbles} onChange={this.handleChange}></input>
+                  <input type="checkbox" name="bubbles" id="bubbles" value={this.state.tea.bubbles} onChange={this.handleChange}></input>
                </div>
                <div>
                   <label htmlFor="milk">Add Sweetened Condensed Milk</label>
-                  <input type="checkbox" name="milk" value={this.state.tea.bubbles} onChange={this.handleChange}></input>
+                  <input type="checkbox" name="milk" id="milk" value={this.state.tea.bubbles} onChange={this.handleChange}></input>
                </div>
                <div>
-                  <button type="submit">Submit</button>
+                  <button type="submit" className={style.customAddToCart}>Add to Cart</button>
                </div>
             </form>
             <br />
-            <Order teas={this.state.teas}/>
          </div>
       )
    }
 }
 
 export default CustomTea
-*/

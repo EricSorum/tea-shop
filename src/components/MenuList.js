@@ -11,41 +11,37 @@ class MenuList extends Component {
    constructor(props) {
       super(props)
       this.state = {
+         id: 1,
          items: [
             {
-              id: 1, 
               name: 'Arnie Palmer',
               description: 'Half black tea, half fresh-made lemonade!',
-              price: '$4.99',
               img: arnie,
+              size: 'Small',
             },
             {
-               id: 3,
                name: 'Southern Sweet',
                description: 'Made the right way... by adding the sugar before the tea!',
-               price: '$4.99',
                img: southern,
+               size: 'Small',
             },
             {
-               id: 4,
                name: 'Peach Tree',
                description: 'Green tea with peach syrup and tapioca bubbles.',
-               price: '$6.99',
                img: peach,
+               size: 'Small',
             },
             {
-               id: 5,
                name: 'Honeydew Pistachio',
                description: 'A local favorite - blended with green tea, ripe melon and pistachios with tapioca bubbles.',
-               price: '$6.99',
                img: honeydew,
+               size: 'Small',
             },
             {
-               id: 6,
                name: 'Big Moo',
                description: 'Black tea with a generous amount of sugar, cream, and bubbles.',
-               price: '$6.99',
                img: moo,
+               size: 'Small',
             }
          ]
       } 

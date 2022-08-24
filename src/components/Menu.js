@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-// import CustomTea from './CustomTea'
+import CustomTea from './CustomTea'
 import style from '../styles/Menu.module.css'
 import MenuList from './MenuList'
 
@@ -16,8 +16,8 @@ class Menu extends Component {
       return (
          <div className={style.menuDiv}>
             <h2>Menu</h2>
-               {/*<button onClick={this.customHandler}>Make your own cup of tea!</button>
-               {this.state.custom ? <CustomTea /> : null}*/}
+               <button onClick={this.customHandler} className={style.customButton}>Make your own cup of tea!</button>
+               {this.state.custom ? <CustomTea addToCart={this.props.addToCart}/> : null}
             <br />
             <div className='listOfItems'>
             <MenuList addToCart={this.props.addToCart}/>

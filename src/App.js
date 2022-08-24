@@ -5,7 +5,7 @@ import Cart from './components/Cart';
 import { useState } from 'react'
 
 /*
-The page has the following structure:
+The components have the following structure:
 
 App
   -Header
@@ -15,9 +15,9 @@ App
   -Cart
     -CartMap
 
-Menu and Cart are in their own div called menuAndCart
+Menu and Cart are in a div called menuAndCart.
 MenuMap contains the .map method that renders each menu item in the array.
-CartMap similarly renders the items in the cart.
+CartMap similarly renders the items that have been added to the cart.
 The Cart component contains the Cart button.  When the button is clicked, the Cart box
 appears and displays all items in the cart.
 */
@@ -29,8 +29,9 @@ function App() {
 
   }
   const removeFromCart = (item) => {
-    setCartItems(cartItems.filter((x) => x.id !== item.id))
+    setCartItems(cartItems.filter((x) => x !== item));
   }
+
   return (
     <div className='App'>
         <Header />
