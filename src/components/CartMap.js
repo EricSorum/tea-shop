@@ -31,8 +31,8 @@ const CartMap = (props) => {
                               <div className={style.Flavors}>
                                  {flavor || bubbles || milk ? <span className={style.Flavors}>Add: </span>: null}
                                  {flavor ? <span className={style.Flavors}>{flavor}</span> : null}
-                                 {bubbles ? <span className={style.Flavors}> Bubbles</span> : null}
-                                 {milk ? <span className={style.Flavors}> Milk</span> : null}
+                                 {/*{bubbles ? <span className={style.Flavors}> Bubbles</span> : null}*/}
+                                 {/*{milk ? <span className={style.Flavors}> Milk</span> : null}*/}
                               </div>
                            <div className={style.Size}>Size: {size}</div>
                            <div className={style.Price}>{renderPrice(size)}</div>

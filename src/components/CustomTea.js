@@ -89,14 +89,14 @@ class CustomTea extends Component {
                      <option value="Peach">Peach</option>
                   </select>
                </div>
-               <div>
+               {/*<div>
                   <label htmlFor="bubbles">Add Bubbles</label>
                   <input type="checkbox" name="bubbles" id="bubbles" onChange={this.bubblesChange}></input>
                </div>
                <div>
                   <label htmlFor="milk">Add Sweetened Condensed Milk</label>
                   <input type="checkbox" name="milk" id="milk" onChange={this.milkChange}></input>
-               </div>
+               </div>*/}
                <div>
                   <button type="submit" className={style.customAddToCart}>Add to Cart</button>
                </div>
