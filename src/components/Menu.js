@@ -2,7 +2,11 @@ import React, { Component } from 'react'
 import CustomTea from './CustomTea'
 import style from '../styles/Menu.module.css'
 import MenuList from './MenuList'
-
+/*
+Menu.js is the parent of MenuList and MenuMap, which render on the left
+side of the page.  Menu.js also contains the "Make your own cup of tea" button,
+which renders the CustomTea form.
+*/
 class Menu extends Component {
    constructor(props) {
      super(props)

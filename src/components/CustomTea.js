@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import style from '../styles/CustomTea.module.css'
-
+/*
+CustomTea renders the form under the "Make your cup of tea" button.
+Users may select the type, flavor, and size of tea and add it to the cart.
+*/
 class CustomTea extends Component {
    constructor(props) {
       super(props)
@@ -16,26 +19,17 @@ class CustomTea extends Component {
          teas: [],
       }
    }
+   /* 
+   handleChange handles all 3 input events in the form, assigning type, size,
+   and flavor to the custom tea.
+   */
    handleChange = e => {
       this.setState({
          ...this.state,
          tea: {...this.state.tea, [e.target.name]: e.target.value}
       })
    }
-   bubblesChange = e => {
-      this.setState({
-         tea: {...this.state.tea, bubbles: !this.state.tea.bubbles}
-      })
-   }
-   milkChange = e => {
-      this.setState({
-         tea: {...this.state.tea, milk: !this.state.tea.bubbles}
-      })
-   }
    submitForm = e => {
-      console.log(e.bubbles)
-      console.log(e.milk)
-      console.log(this.state.tea)
       this.setState({
          teas: this.state.teas.concat(this.state.tea),
          tea: {
@@ -89,7 +83,7 @@ class CustomTea extends Component {
                      <option value="Peach">Peach</option>
                   </select>
                </div>
-               {/*<div>
+               {/* (this is a new feature in progress) <div>
                   <label htmlFor="bubbles">Add Bubbles</label>
                   <input type="checkbox" name="bubbles" id="bubbles" onChange={this.bubblesChange}></input>
                </div>

@@ -1,16 +1,18 @@
 import React from 'react'
 import styles from '../styles/MenuMap.module.css'
-
+/*
+MenuMap.js takes the array of items from MenuList and renders each menu item
+on a card.  This component also allows users to select the size of their tea.
+*/
 const MenuMap = (props) => {
    const { items, addToCart } = props
    
    return (
       <ul className={styles.Ul}>
          {items.map((item) => {
-
             const { name, size, description, img } = item;
-
             const sizeHandler = (e) => item.size = e.target.value;
+            // the .random() method is used to create a unique key for each child.
             return <div key={Math.floor(Math.random() * 10000)} className={styles.itemGrid}>
                      <div className={styles.A}>
                         <div className={styles.Name}>{name}</div>

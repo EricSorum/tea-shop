@@ -6,12 +6,18 @@ import peach from './images/peach.jpg'
 import honeydew from './images/honeydew.jpg'
 import moo from './images/moo.jpg'
 import blue from './images/blue.jpg'
-
+/*
+MenuList.js contains the list of menu items.  The 
+*/
 class MenuList extends Component {
    constructor(props) {
       super(props)
       this.state = {
          id: 1,
+         /* 
+         items is the list contained in the menu.  items is passed down to MenuMap.js
+         where each item is rendered.
+         */
          items: [
             {
               name: 'Arnie Palmer',

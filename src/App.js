@@ -15,11 +15,14 @@ App
   -Cart
     -CartMap
 
-Menu and Cart are in a div called menuAndCart.
 MenuMap contains the .map method that renders each menu item in the array.
 CartMap similarly renders the items that have been added to the cart.
 The Cart component contains the Cart button.  When the button is clicked, the Cart box
 appears and displays all items in the cart.
+
+cartItems is the array containing all items currently in the cart, both menu items
+and custom items.  This is passed down as props throughout the page: to the Menu side
+where items are added to the cart, and the Cart side, where the items are rendered.
 */
 
 function App() {
